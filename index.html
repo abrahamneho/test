@@ -706,8 +706,6 @@ document.getElementById('appForm').addEventListener('submit', function(e) {
 });
 
 function showSuccess() {
-  const ref = 'INFY-2025-' + Math.random().toString(36).substring(2, 9).toUpperCase();
-  document.getElementById('refId').textContent = ref;
   document.getElementById('overlay').classList.add('show');
   document.getElementById('submitBtn').textContent = '✅ Submitted!';
   document.getElementById('submitBtn').style.background = 'linear-gradient(135deg,#16a34a,#15803d)';
