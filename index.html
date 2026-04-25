@@ -1029,7 +1029,7 @@ var ALL_QUESTIONS = [
 (function(){
   document.getElementById("dark-btn").addEventListener("click", function(){
     document.body.classList.toggle("light");
-    this.textContent = document.body.classList.contains("light") ? "\u263E Dark Mode" : "\u2600 Light Mode";
+    this.textContent = document.body.classList.contains("light") ? "\u263E Dark" : "\u2600 Light";
     try { localStorage.setItem("gibs_theme", document.body.classList.contains("light") ? "light" : "dark"); } catch(e) {}
   });
   (function(){
@@ -1037,7 +1037,7 @@ var ALL_QUESTIONS = [
       if(localStorage.getItem("gibs_theme")==="light"){
         document.body.classList.add("light");
         var btn=document.getElementById("dark-btn");
-        if(btn) btn.textContent="\u263E Dark Mode";
+        if(btn) btn.textContent="\u263E Dark";
       }
     } catch(e) {}
   })();
